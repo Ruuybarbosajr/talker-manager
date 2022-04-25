@@ -16,6 +16,7 @@ app.get('/', (_request, response) => {
 });
 
 app.use('/talker', routes.talker);
+app.use('/login', routes.login);
 
 app.use(middleware.error);
 
