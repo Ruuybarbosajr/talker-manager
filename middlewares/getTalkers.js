@@ -1,8 +1,8 @@
-const fs = require('fs/promises');
+const fileSystem = require('../utils/fs');
 
 async function getTalkers(_req, res, next) {
   try {
-    const readFile = JSON.parse(await fs.readFile('talker.json'));
+    const readFile = await fileSystem.readFile('talker.json');
     return res.status(200).json(readFile);
   } catch (error) {
     next(error);
