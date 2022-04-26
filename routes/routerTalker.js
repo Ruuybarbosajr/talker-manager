@@ -5,6 +5,8 @@ const router = express.Router();
 
 router.get('/', middleware.getTalkers);
 
+router.get('/search', middleware.tokenValidation, middleware.getTalkersByQuery);
+
 router.get('/:id', middleware.getTalkerById);
 
 router.post(
