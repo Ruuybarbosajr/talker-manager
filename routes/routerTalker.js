@@ -12,14 +12,14 @@ router.get('/:id', middleware.getTalkerById);
 router.post(
   '/', 
   middleware.tokenValidation, 
-  middleware.headerValidation, 
+  middleware.bodyValidation, 
   middleware.postTalker,
 );
 
 router.put(
   '/:id', 
   middleware.tokenValidation, 
-  middleware.headerValidation,
+  middleware.bodyValidation,
   middleware.putTalker,
 );
 

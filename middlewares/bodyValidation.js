@@ -1,6 +1,6 @@
 const joi = require('../utils/Joi');
 
-function headerValidation(req, _res, next) {
+function bodyValidation(req, _res, next) {
   try {
     const { name, age, talk } = req.body;
     const { error } = joi.schemaPost.validate({ name, age, talk });
@@ -11,4 +11,4 @@ function headerValidation(req, _res, next) {
   }
 }
 
-module.exports = headerValidation;
+module.exports = bodyValidation;
