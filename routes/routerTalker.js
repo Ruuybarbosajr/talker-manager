@@ -7,4 +7,9 @@ router.get('/', middleware.getTalkers);
 
 router.get('/:id', middleware.getTalkerById);
 
+router.post('/', 
+  middleware.tokenValidation, 
+  middleware.postTalkerValidation, 
+  middleware.postTalker);
+
 module.exports = router;
