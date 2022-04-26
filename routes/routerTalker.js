@@ -21,4 +21,10 @@ router.put(
   middleware.putTalker,
 );
 
+router.delete(
+  '/:id',
+  middleware.tokenValidation,
+  middleware.deleteTalker,
+);
+
 module.exports = router;
