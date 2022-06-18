@@ -1,10 +1,3 @@
-# Sumário
-
-- [Boas vindas ao repositório do Talker Manager!](#boas-vindas-ao-repositório-do-talker-manager)
-- [Sumário](#sumário)
-- [Habilidades](#habilidades)
-  - [- Criar rotas e aplicar middlewares.](#--criar-rotas-e-aplicar-middlewares)
-
 # Habilidades
 
 - Realizar operações assíncronas utilizando callbacks;
